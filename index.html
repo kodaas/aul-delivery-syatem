@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    inter: "'Inter', sans-serif"
+                },
+                colors: {
+                    pry: "#2D48A9"
+                }
+            }
+          }
+        }
+      </script>
+    <title>A.U.L ON-Time</title>
+</head>
+<body class="font-inter">
+    <nav class="max-w-[1200px] p-8 w-full flex justify-between items-center">
+        <a href="./index.html">
+            <div class="space-x-3">
+                <img class="inline-block" src="./img/anchor 1.png" alt="Anchor Logo">
+                <h1 class="inline-block font-blod text-xl">A.U.L ON-Time</h1>
+            </div>
+        </a>
+
+        <ul class="flex gap-x-20">
+            <li>Home</li>
+            <li><a href="./foods.html">Foods</a></li>
+            <li>Contact Us</li>
+        </ul>
+
+        <div class="flex gap-x-10 items-center">
+            <div class="cursor-pointer hover:underline"> <a href="./signin.html">Login</a> </div>
+            <div class="bg-pry px-5 py-2 cursor-pointer text-white rounded-lg hover:bg-pry/50"><a href="./signup.html">Sign Up</a></div>
+        </div>
+    </nav>
+
+    <header class="max-w-[1200px] mx-auto w-full grid grid-col-2 grid-flow-col items-center px-10 max-h-[500px] h-[80vh]">
+        <div class=" w-[30em] space-y-8">
+            <h2 class="text-7xl font-bold"> <span class="text-pry">Fastest</span> <br> Delivery & <br> Easy Pickup</h2>
+            <p class="text-2xl">Get the best taste right on time</p>
+            <button class="bg-pry px-8 py-3 text-xl rounded-2xl text-white">Order Now</button>
+        </div>
+
+        <div class="">
+            <img class="w-[60em]" src="./img/delivery-scooter-out-smartphone-location-pointer-online-delivery-ecommerce-concept-blue-background-3d-illustration (1) 2.png" alt="header">
+        </div>
+    </header>
+    
+</body>
+</html>

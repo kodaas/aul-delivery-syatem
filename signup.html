@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: "'Inter', sans-serif",
+            },
+            colors: {
+              pry: "#2D48A9",
+            },
+          },
+        },
+      };
+    </script>
+    <title>A.U.L ON-Time - SignUp</title>
+  </head>
+  <body class="font-inter">
+
+    <nav class="max-w-[1200px] p-8 w-full flex justify-between items-center">
+
+        <a href="./index.html">
+            <div class="space-x-3">
+                <img class="inline-block" src="./img/anchor 1.png" alt="Anchor Logo">
+                <h1 class="inline-block font-blod text-xl">A.U.L ON-Time</h1>
+            </div>
+        </a>
+
+    </nav>
+
+    <main class="h-[80vh] grid place-items-center">
+
+        <section class="text-center mx-auto w-[30rem] rounded-2xl shadow-lg px-10 py-20 space-y-16">
+            <div>
+                <h3 class="font-bold text-2xl">Sign Up</h3>
+                <p>To get delivery on-Time </p>
+            </div>
+
+            <div class="">
+                <input class="block w-full border-2 border-grey-200 rounded-lg px-5 py-3 text-lg bg-transparent" type="text" placeholder="Fullname">
+                <input class="block w-full border-2 border-grey-200 rounded-lg px-5 py-3 text-lg bg-transparent mt-8" type="text" placeholder="Matric no">
+                <input class="block w-full border-2 border-grey-200 rounded-lg px-5 py-3 text-lg bg-transparent mt-8" type="email" placeholder="Email">
+                <input  class="block w-full border-2 border-grey-200 rounded-lg px-5 py-3 text-lg bg-transparent mt-8" type="password" placeholder="Password">
+                <p class="mt-3">Already have an account?  <a href="./signin.html" class="text-pry underline">Sign in</a></p>
+
+                <button class="px-8 py-3 w-full bg-pry text-white rounded-lg mt-16">Create  account</button>
+            </div>
+
+        </section>
+
+    </main>
+
+  </body>
+</html>
