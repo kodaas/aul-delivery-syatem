@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                    fontFamily: {
+                        inter: "'Inter', sans-serif"
+                    },
+                    colors: {
+                        pry: "#2D48A9"
+                    }
+                }
+              }
+            }
+          </script>
+        <title>A.U.L ON-Time - Dashboard</title>
+    </head>
+<body class="bg-[#EEEEEE] flex flex-nowrap">
+
+    <nav class="bg-white h-screen w-24 rounded-r-3xl text-center pt-32 space-y-10">
+
+        <div>
+            <a href="./foods.html">
+                <img class="mx-auto" src="../img/home.png" alt="Home">
+                <p>Home</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="./cart.html">
+                <img class="mx-auto" src="../img/cart.png" alt="Home">
+                <p>Cart</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="../index.html">
+                <img class="mx-auto" src="../img/chat.png" alt="Home">
+                <p>Chat</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="./history.html">
+                <img class="mx-auto" src="../img/chat.png" alt="History">
+                <p>History</p>
+            </a>
+        </div>
+        
+    </nav>
+
+    <main class="max-h-screen w-full p-10">
+        <nav>
+            <h3 class="text-2xl">Welcome,   Bifarin > Drinks</h3>
+        </nav>
+
+        <section class="mt-10 flex justify-between border-b-2 border-gray-500">
+
+            <a class="p-5 w-[33%] border-b-2 hover:border-pry text-center" href="./foods.html"><div>Food</div></a>
+
+            <a class="p-5 w-[33%] border-b-2 border-pry text-center" href="./drinks.html"><div>Drinks</div></a>
+
+            <a class="p-5 w-[33%] border-b-2 hover:border-pry text-center" href="./snacks.html"><div>Snacks</div></a>
+        </section>
+
+        <section class="mt-10 h-[75vh] overflow-auto p-5 flex gap-x-10 content-start flex-wrap gap-y-10">
+
+            <div class="bg-white rounded-2xl shadow-lg w-[14em] space-y-3 pb-5">
+                <img src="../img/rice 1.png" alt="food">
+                <div class="flex justify-between items-center flex-nowrap">
+                    <div class="pl-3">
+                        <h4>Cocacola</h4>
+                        <p>₦ 150.0</p>
+                        <i>Per spoon</i>
+                    </div>
+                    <button class="bg-pry rounded-lg text-white px-4 py-1 mr-3">order</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
